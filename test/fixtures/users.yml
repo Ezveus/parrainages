@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  login: mdupont
+  last_name: Dupont
+  first_name: Michel
+
+two:
+  login: gdurand
+  last_name: Durand
+  first_name: Guillaume
+  sponsor: one
