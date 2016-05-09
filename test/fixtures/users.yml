@@ -1,12 +1,60 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+mdupont:
   login: mdupont
   last_name: Dupont
   first_name: Michel
 
-two:
+gdurand:
   login: gdurand
   last_name: Durand
   first_name: Guillaume
-  sponsor: one
+  sponsor: mdupont
+
+mmartin:
+  login: mmartin
+  last_name: Martin
+  first_name: Martin
+  sponsor: gdurand
+
+hbouchet:
+  login: hbouchet
+  last_name: Bouchet
+  first_name: Hélène
+  sponsor: gdurand
+
+mboulanger:
+  login: mboulanger
+  last_name: Boulanger
+  first_name: Mathilde
+  sponsor: hbouchet
+
+bbernard:
+  login: bbernard
+  last_name: Bernard
+  first_name: Bernard
+  sponsor: mdupont
+
+cdubois:
+  login: cdubois
+  last_name: Dubois
+  first_name: Clémence
+  sponsor: hbouchet
+
+mrobert:
+  login: mrobert
+  last_name: Robert
+  first_name: Matthieu
+  sponsor: bbernard
+
+fperrin:
+  login: fperrin
+  last_name: Perrin
+  first_name: François
+  sponsor: hbouchet
+
+lchevalier:
+  login: lchevalier
+  last_name: Chevalier
+  first_name: Léa
+  sponsor: fperrin
