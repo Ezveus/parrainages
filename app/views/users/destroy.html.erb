@@ -1,0 +1,5 @@
+<h1>Destroy <%= @user.full_name %>?</h1>
+<div>
+  <%= button_to('Yes', @user, method: :delete) %>
+  <%= button_to('No', @user, method: :get) %>
+</div>

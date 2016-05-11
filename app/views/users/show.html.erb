@@ -1,0 +1,14 @@
+<h1><%= @user.full_name %></h1>
+<ul>
+  <li>login: <%= @user.login %></li>
+  <li>Created at: <%= @user.created_at %></li>
+  <li>Updated at: <%= @user.updated_at %></li>
+  <li>Sponsor: <%= sponsor_full_name_as_link(@user) %></li>
+  <li>Initial sponsor: <%= user_as_link(@user.initial_sponsor) %></li>
+</ul>
+<h2>Sponsoring tree</h2>
+<%= make_sponsoring_tree_for_user(@user) %>
+<div>
+  <%= link_to('Back to user list', users_path) %>
+  <%= button_to('Delete', user_destroy_url(@user), method: :get) %>
+</div>

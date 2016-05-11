@@ -1,0 +1,26 @@
+<h1>User list</h1>
+<div>
+  <%= button_to('Create a user', new_user_path, method: :get) %>
+</div>
+<table>
+  <thead>
+  <tr>
+    <th>Login</th>
+    <th>Full name</th>
+    <th>Sponsored by</th>
+    <th><%= link_to 'Proteges number', users_path(sort: :proteges_count, order: reverse_order ) %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= user.login %></td>
+        <td><%= user.full_name %></td>
+        <td><%= sponsor_full_name_as_link(user) %></td>
+        <td><%= link_to(user.proteges.count, user) %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<h2>Sponsoring tree</h2>
+<%= make_sponsoring_tree_for_users %>
